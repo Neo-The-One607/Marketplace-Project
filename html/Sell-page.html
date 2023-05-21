@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sell</title>
+    <link rel="stylesheet" href="../css/Sell-page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/6a4151cb09.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="top-section">
+          <div class="logo" id="landing">
+            <a href="#" class="logo">
+              <img
+                src="../logo/eduMarket.svg"
+                alt="site name"
+                width="200"
+                height="100"
+              />
+            </a>
+          </div>
+          <div class="container">
+            <div class="search_wrap search_wrap_1">
+              <div class="search_box">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="search for products and categories"
+                />
+                <div class="btn btn_common">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top-icons">
+            <div class="top-right-icons">
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                <p>Wishlist</p>
+              </a>
+            </div>
+            <div class="top-right-icons">
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+                <p>Account</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <div class="left-navbar">
+            <ul class="navbar1">
+              <li><a href="#">Top Sellers</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Appliances</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">other</a></li>
+            </ul>
+          </div>
+          <div class="right-navbar">
+            <ul class="navbar2">
+              <li><a href="#">Chats</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="selling-page">
+        <div class="bread-crums">
+            <p>
+                <a href="#" class="post">Home</a> /
+                <a href="#" class="pre">Sell</a>
+            </p>
+        </div>
+        <div class="selling-heading">
+            <h2>Product Information</h2>
+            <p>Make sure that all required fields are filled before adding your product</p>
+        </div>
+        <div class="selling-main">
+            <div class="right-side">
+                <form>
+                    <div class="form-field">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" id="productName" name="productName"><br><br>
+                    </div>
+                    <div class="form-field">
+                        <label for="price">Price:</label>
+                        <input type="text" id="price" name="price"><br><br>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="condition">Condition:</label>
+                        <input type="text" id="condition" name="condition"><br><br>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                            <option value=""></option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Appliances">Appliances</option>
+                            <option value="Furniture">Furniture</option>
+                            <option value="Books">Books</option>
+                            <option value="other">other</option>
+                        </select><br><br>
+                    </div>
+                    
+                    <div class="form-textarea">
+                        <label for="description">Description:</label><br>
+                        <textarea id="description" name="description" rows="5" cols="50"></textarea><br><br>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="left-side">
+                <form>
+
+                    <div class="form-field">
+                        <label for="date">Product Date:</label>
+                        <input type="date" id="date" name="date"><br><br>
+                    </div>
+
+                    <h2>Product Images</h2>
+
+                    <div class="image-labels">
+                        <div class="big-image-label">
+                            <label class="drag-drop-label large-label" for="image1">Drop your image here, or select <span>Click to browse</span></label>
+                            <input class="drag-drop-input" type="file" id="image1" name="image1"><br><br>
+                        </div>
+                        
+                        <div class="stacked-image-labels">
+                            <div class="small-image-label">
+                                <label class="drag-drop-label small-label" for="image2">Drop your image here, or select <span>Click to browse</span></label>
+                                <input class="drag-drop-input" type="file" id="image2" name="image2"><br><br>
+                            </div>
+
+                            <div class="small-image-label">
+                                <label class="drag-drop-label small-label" for="image3">Drop your image here, or select <span>Click to browse</span></label>
+                                <input class="drag-drop-input" type="file" id="image3" name="image3"><br><br>
+                            </div>
+
+                            <div class="small-image-label">
+                                <label class="drag-drop-label small-label" for="image4">Drop your image here, or select <span>Click to browse</span></label>
+                                <input class="drag-drop-input" type="file" id="image4" name="image4"><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>You need to have a minimum of two images or a maximum of four for your upload to be approved.</p>
+
+                    <input type="submit" value="Add Product">
+                    <input type="submit" value="Save Product">
+                  
+                </form>
+            </div>
+        </div>
+    <section>
+        <script>
+            const dragDropLabels = document.querySelectorAll('.drag-drop-label');
+        
+            dragDropLabels.forEach((label) => {
+              label.addEventListener('dragover', handleDragOver);
+              label.addEventListener('dragenter', handleDragEnter);
+              label.addEventListener('dragleave', handleDragLeave);
+              label.addEventListener('drop', handleDrop);
+            });
+        
+            function handleDragOver(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              event.dataTransfer.dropEffect = 'copy';
+            }
+        
+            function handleDragEnter(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              this.classList.add('drag-over');
+            }
+        
+            function handleDragLeave(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              this.classList.remove('drag-over');
+            }
+        
+            function handleDrop(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              this.classList.remove('drag-over');
+        
+              const file = event.dataTransfer.files[0];
+              const input = this.querySelector('.drag-drop-input');
+              input.files = event.dataTransfer.files;
+            }
+        </script>
+  </body>
+</html>
