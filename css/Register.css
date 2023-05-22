@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*Styling the navigation bar*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:  #f2f2f2;
+  border-bottom: 1px solid #aeaeae;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 16px;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.line{
+border-bottom: 2px solid #333;
+}
+
+.btn {
+  display: inline-block;
+  background-color: none;
+  color: black;
+  padding: 0 20px;
+  text-decoration: none;
+  border-radius: 2px;
+  width: 150px;
+  border: 2px solid black;
+}
+
+.btn:hover {
+  background-color: #333;
+  color:white;
+}
+
+/* end of navigation bar */
+
+/* Styling registration main page */
+
+.registration-page {
+  padding: 40px 100px;
+  position: relative;
+} 
+
+.registration-page h2{
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.registration-section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.left-side{
+  min-width: 40%;
+}
+
+.image-section img{
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-field {
+  margin-bottom: 5px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-field input[type="text"],
+.form-field input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-registration{
+  text-align: center;
+}
+
+.submit-registration a {
+  display: inline-block;
+  background-color: none;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+  width: 150px;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 14px;
+}
+
+.submit-registration a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.submit-registration span{
+  color: blue;
+}
+
+.submit-registration span:hover{
+  color: red;
+}
+
+.submit-registration p{
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
