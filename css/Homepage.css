@@ -1,31 +1,34 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    list-style-type: none;
-  }
-/*Styling the navigation bar*/
-.nav {
-    border-bottom: 1px solid #aeaeae;
-  }
-  .top-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color:  #f2f2f2;
-    border-bottom: 1px solid #aeaeae;
-    height: 70px;
-  }
-
-  .container .input{
-	border: 0;
-	outline: none;
-	color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
+/*Styling the navigation bar*/
+
+.nav {
+  border-bottom: 1px solid #aeaeae;
+}
+
+.top-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:  #f2f2f2;
+  border-bottom: 1px solid #aeaeae;
+  height: 70px;
+}
+
+.container .input{
+border: 0;
+outline: none;
+color: black;
+}
+
 .search_wrap{
 	width: 500px;
 	margin: 38px auto;
@@ -61,11 +64,11 @@
 }
 
 .btn.btn_common{
-    color: gray;
+  color: gray;
 }
 
 .btn.btn_common :hover{
-    color: black;
+  color: black;
 }
 
 .search_wrap .search_box .btn.btn_common .fas{
@@ -86,178 +89,183 @@
 .search_wrap.search_wrap_1 .search_box .input{
 	padding-right: 80px;
 }
-  .top-icons{
-    display: flex;
 
-  }
+.top-icons{
+  display: flex;
 
-  .top-right-icons{
-    text-align: center;
-    padding: 20px;
-  }
+}
 
-  .fa-regular{
-    color: black;
-  }
+.top-right-icons{
+  text-align: center;
+  padding: 20px;
+}
 
-   .fa-heart:hover{
-    color: red;
-  }
+.fa-regular{
+  color: black;
+}
 
-  .top-right-icons p{
-    color: black;
-    font-size: 13px;
-  }
+.fa-heart:hover{
+  color: red;
+}
 
-  .bottom-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.top-right-icons p{
+  color: black;
+  font-size: 13px;
+}
 
-  .navbar1 li {
-    float: left;
-  }
+.bottom-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar1 li {
+  float: left;
+}
   
-  .navbar1 li a {
-    display: block;
-    color: gray;
-    text-align: center;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-size: 13px;
-  }
-  .navbar1 li a:hover {
-    color: black;
-  }
+.navbar1 li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+.navbar1 li a:hover {
+  color: black;
+}
 
-  
-  .navbar2 li {
-    float: left;
-  }
-  
-  .navbar2 li a {
-    display: block;
-    color: gray;
-    text-align: center;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-size: 13px;
-  }
 
-  .navbar2 li a:hover {
-    color: black;
-  }
+.navbar2 li {
+  float: left;
+}
+  
+.navbar2 li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.navbar2 li a:hover {
+  color: black;
+}
 
 /* end of navigation bar*/
+
 
 /*Styling the main homepage */
 
 .homepage{
-    padding-top: 40px;
-    padding-left: 50px;
-    padding-right: 40px;
-    padding-bottom: 30px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-bottom: 30px;
 }
 
 .homepage-headings{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .homepage-headings h2{
-    font-size: 20px;
-    font-family: 'Roboto Slab', serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
-    margin-left: 10px;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  margin-left: 10px;
 }
 
 .homepage-headings a{
-    font-size: 13px;
-    display: inline-block;
-    background-color: none;
-    color: #aeaeae;
-    padding: 8px 20px;
-    text-decoration: none;
-    border: 1px solid #aeaeae;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    border-radius: 20px;
+  font-size: 13px;
+  display: inline-block;
+  background-color: none;
+  color: #aeaeae;
+  padding: 8px 20px;
+  text-decoration: none;
+  border: 1px solid #aeaeae;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
 }
 
 .homepage-headings a:hover{
-    border: 1px solid black;
-    color: black;
+  border: 1px solid black;
+  color: black;
 }
 
 .fa-solid{
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .homepage-container{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sub-container{
-    border: 1px solid #aeaeae;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 340px;
-    margin-top: 10px;
-    margin-left: 10px;
+  border: 1px solid #aeaeae;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 340px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
+
 .product-info{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
+
 .product-info h2{
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
 }
+
 .product-info h3{
-    font-size: 14px;
-    font-family: 'Roboto Slab', serif;
-    margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 10px;
 }
 
 .description p{
-    margin-bottom: 10px;
-    font-size: 13px;
+  margin-bottom: 10px;
+  font-size: 13px;
 }
 
 .description  a {
-    font-size: 13px;
-    display: inline-block;
-    background-color: none;
-    color: black;
-    padding: 8px 20px;
-    text-decoration: none;
-    width: 318px;
-    border: 1px solid #aeaeae;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px;
+  font-size: 13px;
+  display: inline-block;
+  background-color: none;
+  color: black;
+  padding: 8px 20px;
+  text-decoration: none;
+  width: 318px;
+  border: 1px solid #aeaeae;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
   
 .description  a:hover {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 
 .seller-snip{
-    margin-bottom: 10px;
-    display: flex;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .seller-snip h5{
-    font-family: 'Roboto Slab', serif;
-    margin-left: 5px;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 5px;
 }
 

@@ -6,7 +6,9 @@
   text-decoration: none;
   list-style-type: none;
 }
+
 /*Styling the navigation bar*/
+
 .nav {
   border-bottom: 1px solid #aeaeae;
 }
@@ -22,11 +24,12 @@
   height: 70px;
 }
 
-  .container .input{
-	border: 0;
-	outline: none;
-	color: black;
+.container .input{
+border: 0;
+outline: none;
+color: black;
 }
+
 .search_wrap{
 	width: 500px;
 	margin: 38px auto;
@@ -87,8 +90,9 @@
 .search_wrap.search_wrap_1 .search_box .input{
 	padding-right: 80px;
 }
-  .top-icons{
-  display: flex;
+
+.top-icons{
+display: flex;
 
 }
 
@@ -101,8 +105,8 @@
   color: black;
 }
 
-  .fa-heart:hover{
-  color: red;
+.fa-heart:hover{
+color: red;
 }
 
 .top-right-icons p{
@@ -130,11 +134,11 @@
   text-decoration: none;
   font-size: 13px;
 }
+
 .navbar1 li a:hover {
   color: black;
 }
-
-  
+ 
 .navbar2 li {
   float: left;
 }
@@ -154,7 +158,9 @@
 
 /* end of navigation bar*/
 
+
 /*Styling the product section*/
+
 .description-page {
   padding-top: 50px;
   padding-left: 100px;
@@ -162,6 +168,7 @@
   padding-right: 100px;
   position: relative;
 }
+
 .description-section {
   display: flex;
   justify-content: space-between;
@@ -202,16 +209,19 @@
   font-weight: bold;
   font-size: 18px;
 }
+
 .seller-snip{
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
+
 .seller-snip h5{
   padding-left: 8px;
   font-size: 14px;
   font-weight: normal;
 }
+
 .seller-snip h5 a{
   text-decoration: underline;
   padding-left: 6px;
@@ -224,10 +234,12 @@
   color: red;
 
 }
+
 .chat-button{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .chat-button a {
   display: inline-block;
   background-color: none;
@@ -285,13 +297,16 @@
 .bread-crums{
   margin-bottom: 10px;
 }
+
 .post {
   color: gray;
   font-size: 13px;
 }
+
 .post:hover{
   color: black
 }
+
 .pre{
   color: black;
   font-size: 13px;
