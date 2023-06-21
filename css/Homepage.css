@@ -167,6 +167,26 @@ color: black;
   padding-bottom: 30px;
 }
 
+.bread-crums{
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+
+.before{
+  color: gray;
+  font-size: 13px;
+}
+
+.before:hover{
+  color: black
+}
+
+.post {
+  color: black;
+  font-size: 13px;
+}
+
 .homepage-headings{
   display: flex;
   justify-content: space-between;

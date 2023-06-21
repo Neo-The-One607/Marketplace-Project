@@ -168,6 +168,17 @@ display: flex;
 
 .bread-crums{
   margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+
+.before{
+  color: gray;
+  font-size: 13px;
+}
+
+.before:hover{
+  color: black
 }
 
 .post {
