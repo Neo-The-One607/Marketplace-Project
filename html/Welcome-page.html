@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../css/Welcome-page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/6a4151cb09.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo" id="landing">
+          <a href="#" class="logo">
+            <img
+              src="../logo/eduMarket.svg"
+              alt="site name"
+              width="200"
+              height="100"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="welcome-page">
+      <div class="welcome-heading">
+        <h1>Welcome!!</h1>
+      </div>
+      <form method="post" action="../php/Welcome-page.php">
+        <input
+          type="submit"
+          name="role"
+          value="                buyer                "
+          class="submit-button"
+        />
+        <!-- <button
+              type="submit"
+              name="role"
+              value="buyer"
+              class="submit-button"
+            >
+              Buy
+            </button> -->
+        <input
+          type="submit"
+          name="role"
+          value="                seller                "
+          class="submit-button"
+        />
+        <!-- <button
+            type="submit"
+            name="role"
+            value="seller"
+            class="submit-button"
+          >
+            Sell
+          </button> -->
+      </form>
+    </section>
+  </body>
+</html>

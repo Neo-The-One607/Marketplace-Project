@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="../css/Sign-in.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/6a4151cb09.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo" id="landing">
+          <a href="../index.php" class="logo">
+            <img
+              src="../logo/eduMarket.svg"
+              alt="site name"
+              width="200"
+              height="100"
+            />
+          </a>
+        </div>
+        <ul class="navbar">
+          <li><a href="#" title="Current page" class="line">Sign In</a></li>
+          <li><a href="../html/Register.html" class="btn">Register</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="sign-in-page">
+      <div class="image-container">
+        <img src="../images/marketplace.jpg" alt="Image" />
+      </div>
+      <div class="content-box">
+        <h1>Sign In</h1>
+        <p class="welcome-message">
+          Welcome Back! If you already have an account, sign in below.
+        </p>
+        <form method="post" action="../php/signin.php">
+          <input
+            type="text"
+            placeholder="Student Email"
+            name="studentemail"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="userspassword"
+            required
+          />
+          <div class="bottom-container">
+            <div class="remember-me">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+          </div>
+          <div class="end-container">
+            <button type="submit" name="signin" class="submit-button">
+              Sign in
+            </button>
+          </div>
+        </form>
+        <!-- <p><?php echo $error_message; ?></p> -->
+        <p class="sign-up-message">
+          Don't have an account? <a href="../html/Register.html">Register</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

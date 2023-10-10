@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/Register.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/6a4151cb09.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo" id="landing">
+          <a href="../index.php" class="logo">
+            <img
+              src="../logo/eduMarket.svg"
+              alt="site name"
+              width="200"
+              height="100"
+            />
+          </a>
+        </div>
+        <ul class="navbar">
+          <li><a href="../html/signin.html" class="btn">Sign in</a></li>
+          <li><a href="#" class="line" title="Current page">Register</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="registration-page">
+      <div class="registration-heading">
+        <h2>Registration</h2>
+      </div>
+      <div class="registration-section">
+        <div class="left-side">
+          <form
+            method="post"
+            action="../php/Register.php"
+            onsubmit="return validateForm()"
+          >
+            <div class="form-field">
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                required
+              /><br /><br />
+            </div>
+            <div class="form-field">
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                required
+              /><br /><br />
+            </div>
+            <div class="form-field">
+              <label for="residence">Residence</label>
+              <input
+                type="text"
+                id="residence"
+                name="residence"
+                required
+              /><br /><br />
+            </div>
+            <div class="form-field">
+              <label for="phonenumber">Phone Number</label>
+              <input
+                type="text"
+                id="phonenumber"
+                name="phonenumber"
+                required
+              /><br /><br />
+            </div>
+
+            <div class="form-field">
+              <label for="studentemail">Student Email</label>
+              <input
+                type="text"
+                id="studentemail"
+                name="studentemail"
+                required
+              /><br /><br />
+            </div>
+
+            <div class="form-field">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="userspassword"
+                required
+              />
+              <span
+                class="password-toggle"
+                onclick="togglePasswordVisibility('password')"
+              >
+                <i class="fas fa-eye"></i>
+              </span>
+            </div>
+
+            <div class="form-field">
+              <label for="confirmpassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmpassword"
+                name="confirmpassword"
+                required
+                onkeyup="validatePassword()"
+              />
+              <span
+                class="password-toggle"
+                onclick="togglePasswordVisibility('confirmpassword')"
+              >
+                <i class="fas fa-eye"></i>
+              </span>
+              <div id="password-match-message"></div>
+            </div>
+
+            <div class="submit-registration">
+              <button type="submit" class="res-submit">Register</button>
+              <p>
+                Already have an account?
+                <a href="../html/signin.html"><span>Sign in</span></a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="right-side">
+          <div class="image-section">
+            <img
+              src="../images/book.jpg"
+              width="500"
+              height="500"
+              alt="stacked books"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function validatePassword() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmpassword").value;
+        var message = document.getElementById("password-match-message");
+
+        if (password === confirmPassword) {
+          message.innerHTML = "Passwords match!";
+          message.style.color = "green";
+        } else {
+          message.innerHTML = "Passwords do not match.";
+          message.style.color = "red";
+        }
+      }
+
+      function validateForm() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmpassword").value;
+
+        if (password === confirmPassword) {
+          return true; // Allow form submission
+        } else {
+          alert("Passwords do not match. Please check again.");
+          return false; // Prevent form submission
+        }
+      }
+
+      function togglePasswordVisibility(fieldId) {
+        var inputField = document.getElementById(fieldId);
+        var icon = inputField.nextElementSibling.querySelector("i");
+
+        if (inputField.type === "password") {
+          inputField.type = "text";
+          icon.classList.remove("fa-eye");
+          icon.classList.add("fa-eye-slash");
+        } else {
+          inputField.type = "password";
+          icon.classList.remove("fa-eye-slash");
+          icon.classList.add("fa-eye");
+        }
+      }
+    </script>
+  </body>
+</html>
